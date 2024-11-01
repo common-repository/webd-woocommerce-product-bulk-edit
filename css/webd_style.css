@@ -1,0 +1,289 @@
+/* ANIMATION RIGHT TO LEFT*/
+@-webkit-keyframes rightToLeft{ 
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateX(300px);
+	    -moz-transform: translateX(300px);
+	    transform: translateX(300px) ;
+	    
+	}
+	30% {
+	    opacity: 1;
+	    -webkit-transform: translateX(0px) ;
+	    -moz-transform: translateX(0px) ;
+	    transform: translateX(0px) ;
+
+	}
+	100% {
+	    opacity: 1;
+	    -webkit-transform: scale(1) ;
+	    -moz-transform:  scale(1) ;
+	    transform:  scale(1) ;
+	    
+	}
+}
+
+.rightToLeft{
+    -webkit-animation: rightToLeft 2s ease-in-out;
+    -moz-animation: rightToLeft 2s ease-in-out;
+    -o-animation: rightToLeft 2s ease-in-out;
+    -ms-animation: rightToLeft 2s ease-in-out;
+    animation: rightToLeft 2s ease-in-out;	
+	
+}
+
+.webd_woocommerce_bulk_edit{
+		overflow:hidden;
+}
+
+.webd_woocommerce_bulk_edit .nav-tab-wrapper{
+		margin-bottom:10px;
+}
+
+.webd_woocommerce_bulk_edit .msg,.webd_woocommerce_bulk_edit .response{
+		background:#ccc;
+		padding:10px;
+		border:1px solid #777;
+		display:none;
+}
+.webd_woocommerce_bulk_edit .success{
+		background:lightGreen;
+		padding:5px;
+		border:1px solid green;
+		color:#fff;
+}
+.webd_woocommerce_bulk_edit .error{
+		background:#FFCCCB;
+		padding:5px;
+		border:1px solid red;
+}
+.webd_woocommerce_bulk_edit .warning{
+		background:#d9534f;
+		padding:5px;
+		color:#fff;
+}
+
+.webd_woocommerce_bulk_edit input[type='text'],.webd_woocommerce_bulk_edit input[type='number'],.webd_woocommerce_bulk_edit input[type='email'],.webd_woocommerce_bulk_edit  textarea,.webd_woocommerce_bulk_edit  select{
+		width:100%;
+}
+
+
+.webd_woocommerce_bulk_edit h2{
+		font-size:14px!important;
+}
+.webd_woocommerce_bulk_edit h3{
+		font-size:12px !important;
+}
+.webd_woocommerce_bulk_edit h4{
+		font-size:12px !important;
+}
+.webd_woocommerce_bulk_edit ,.webd_woocommerce_bulk_edit p{
+		font-size:12px !important;
+}
+
+.webd_woocommerce_bulk_edit .left_wrap{
+
+}
+
+.webd_woocommerce_bulk_edit .right_wrap{
+		padding-left:10px;
+		border:1px solid #fff;
+		width:100%;
+		background: #fff;
+		border-radius:5px ;
+		border:3px solid #A36296;
+		font-size:1.3em;
+		box-shadow:0 2px 3px #777;
+}
+
+.webd_woocommerce_bulk_edit .right_wrap h2{
+	border-bottom:1px solid #A36296;
+	padding-bottom:5px;
+	font-size:20px !important;
+}
+
+.webd_woocommerce_bulk_edit .premium_button{
+		background:#0085ba;
+		color:#fff;
+		padding:5px;
+		margin:5px;
+		margin-right:0;
+		text-decoration:none;
+		border-radius:5px;
+		font-size:1.2em;
+}
+
+.webd_woocommerce_bulk_edit .gopro{
+		background:#A36296 !important;
+		color:#fff;
+		transition:all .3s ease-in;
+}
+.webd_woocommerce_bulk_edit .gopro:hover{
+		opacity:0.7;
+}
+
+.webd_woocommerce_bulk_edit .premium_img{
+	max-width:50%;
+	max-height:50%;	
+}
+
+.webd_woocommerce_bulk_edit .premium_msg{
+		display:none;
+		background:#F08080;
+		border:1px solid red;
+		text-align:center;
+		padding:10px;
+		margin:10px;
+}
+
+.webd_woocommerce_bulk_edit .webd_extra {
+		overflow:hidden;
+}
+.webd_woocommerce_bulk_edit .webd_extra li{
+		display:inline;
+		width:30%;
+		padding:1%;
+		margin:1%;
+		border-bottom:1px solid #fefefe;
+}
+
+.webd_woocommerce_bulk_edit .webd_plugins{
+		overflow:hidden;
+		position:relative;
+		width:100%;
+}
+
+.webd_woocommerce_bulk_edit .webd_plugins li{
+		width:50%;
+		float:left;
+		text-align:center;
+}
+.webd_woocommerce_bulk_edit .webd_plugins li .premium_msg{
+		width:50%;
+}
+.webd_woocommerce_bulk_edit .webd_plugins div{
+	width:60%;
+	padding-left:20%;
+	text-align:left;
+}
+
+.web_logo{
+	float:right;
+}
+.web_logo img{
+	width:150px;
+	height:100px;
+}
+
+.center{
+		text-align:center;
+}
+
+.webd_woocommerce_bulk_edit #tabs{
+		overflow-x:scroll;
+}
+
+.webd_woocommerce_bulk_edit #tabs li ,.webd_woocommerce_bulk_edit #tabs li a{
+		display:inline;
+		padding-right:10px;
+}
+
+.webd_woocommerce_bulk_edit th{
+		background:#777;
+		color:#fff;
+}
+.webd_woocommerce_bulk_edit .toggler{
+}
+.webd_woocommerce_bulk_edit .togglerMassive, .webd_woocommerce_bulk_edit #updateMassive{
+	display:none;
+}
+/* === ajaxify === */
+.webd_woocommerce_bulk_edit.loading > * {
+    opacity:0.2;
+}
+
+.webd_woocommerce_bulk_edit.loading:before {
+    position:fixed;
+    content: "Loading...";
+    font-size:2em;
+    padding: 22px;
+    background: #000;
+    background: url(../images/loading.gif) no-repeat center center;
+    color: #777;
+    width: 50%;
+    height:50%;
+    margin-left:15%;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+
+.webd_woocommerce_bulk_edit .convertToTable{overflow-x:scroll;width:100%; white-space: nowrap;text-align:center;}
+.webd_woocommerce_bulk_edit .tableHead {
+	color:#fff;
+	font-size:14px;
+	margin-bottom:10px;
+    display: block;
+    width: 100%; 
+	background:#555;
+	text-align:center;
+	border-bottom:2px solid #777;
+	width:100%; 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+	z-index:999;
+ }
+ .webd_woocommerce_bulk_edit .tableHead div{
+	 display: inline-block; white-space: nowrap;background:#555;
+ }
+
+.webd_woocommerce_bulk_edit .tableBody{max-height:300px;display: block; width:100%; }
+
+.webd_woocommerce_bulk_edit .tableBody>*{display: block;position: relative;}
+	
+.webd_woocommerce_bulk_edit .tableBody>*>* { display: inline-block;white-space: wrap;width:170px;padding:5px;
+}
+.webd_woocommerce_bulk_edit .tableBody form,.webd_woocommerce_bulk_edit .tableBody .warning{
+		width:100%;
+		border-bottom:1px solid #ccc;
+}
+.webd_woocommerce_bulk_edit .convertToTable h2,.webd_woocommerce_bulk_edit section{
+	border-top:none;
+}
+
+.webd_woocommerce_bulk_edit .tableHead div{
+	width:170px;
+	padding:5px;
+	position: relative;
+ }
+
+.webd_woocommerce_bulk_edit .tableHead div:nth-child(1) , .webd_woocommerce_bulk_edit .tableBody div:nth-child(1){
+	max-width:50px !important;
+}
+
+.webd_woocommerce_bulk_edit .tableHead div:nth-child(2), .webd_woocommerce_bulk_edit .tableBody div:nth-child(2){
+	max-width:70px !important;
+}
+.webd_woocommerce_bulk_edit input[type='text'], .webd_woocommerce_bulk_edit input[type='number'],
+ .webd_woocommerce_bulk_edit input[type='email'],.webd_woocommerce_bulk_edit textarea, .webd_woocommerce_bulk_edit select {
+    width: 90%;
+}
+
+.bulk_wrap_free_instructionsVideo{
+		color:green;
+		border:1px solid green;
+}
+
+.open{
+		content:"";
+}
+
+
+@media(max-width:980px){
+		.webd_woocommerce_bulk_edit  .left_wrap, .webd_woocommerce_bulk_edit .right_wrap{
+			float:none;
+			width:100%;
+			border-right:none;
+		}
+}
